@@ -27,8 +27,8 @@ function Product() {
     imageIcon: "text-white",
     selectSize: "flex justify-between mt-10",
     sizesContainer: "grid grid-cols-5 gap-0.5",
-    qty: "flex justify-between text-2xl mt-10 ml-2",
-    callToActionContainer: "mt-10 flex w-full justify-evenly",
+    qty: "flex justify-between text-2xl my-4 ml-2",
+    callToActionContainer: "mt-3 flex w-full justify-evenly",
     IncDecContainer: "flex items-baseline mx-10",
   };
   //  console.log(size)
