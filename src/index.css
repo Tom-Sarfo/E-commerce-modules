@@ -8,7 +8,7 @@
     /* @apply text-lg */
 }
   .btn {
-    @apply bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 text-xs uppercase rounded-sm w-full;
+    @apply bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 text-xs uppercase rounded-lg w-full;
   }
   .addToCart {
     @apply bg-white border-2 border-purple-700 hover:bg-purple-800 hover:text-white text-purple-700 py-1 px-4 text-xs uppercase rounded-sm;
@@ -59,7 +59,7 @@
   }
 
   .cartCard {
-    @apply w-64 rounded-sm bg-white flex;
+    @apply w-full rounded-sm bg-white flex;
     border-width: 1px;
     height: 70px;
   }

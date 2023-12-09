@@ -4,9 +4,9 @@ import Shipping from "../ShippingComponents/Shipping";
 import Divider from "@mui/material/Divider";
 
 const cartSyles = {
-  container: "flex flex-col py-2 h-full",
+  container: "flex flex-col py-2 h-full px-2 ",
   totals:
-    "flex justify-between w-64 h-10 rounded bg-white text-purple-700 drop-shadow p-2 my-4 text-left",
+    "flex justify-between w-full h-10 rounded bg-white text-purple-700 drop-shadow p-2 my-4 text-left",
 };
 
 export default function Cart() {

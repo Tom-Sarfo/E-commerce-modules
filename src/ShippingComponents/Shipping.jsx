@@ -5,9 +5,9 @@ import ShippingDetails from "./ShippingDetails";
 export default function Shipping() {
   return (
     <div className="">
-      <h1 className="text-sm py-4">Select your preffered shipping method</h1>
+      <h1 className="text-sm py-4 px-7">Select your preffered shipping method</h1>
       {/* use radio buttons */}
-      <form className="flex justify-between">
+      <form className="flex justify-around">
         <input
           type="radio"
           name="shippingMethod"

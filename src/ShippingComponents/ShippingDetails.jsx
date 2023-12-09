@@ -6,7 +6,7 @@ import MultiLineInput from "./MultiLineInput";
 export default function ShippingDetails() {
   const ShippingDetails = {
     styles:
-      "w-64 rounded bg-white border-gray-400 border-2 my-4 flex flex-col py-4",
+      "w-full rounded bg-white border-gray-400 border-2 my-4 flex flex-col py-4 px-4",
   };
 
   const fieldName = ["full Name", "email address", "phone"];
