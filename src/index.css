@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components { 
+.Entry {
+    /* @apply text-lg */
+}
+  .btn {
+    @apply bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 text-xs uppercase rounded-sm w-full;
+  }
+  .addToCart {
+    @apply bg-white border-2 border-purple-700 hover:bg-purple-800 hover:text-white text-purple-700 py-1 px-4 text-xs uppercase rounded-sm;
+  }
+
+  #size-box {
+    @apply border-gray-400 border h-11 w-11 text-xl py-2 px-2;
+  }
+  .size-box-clicked {
+    @apply border-black border h-11 w-11 bg-purple-700 text-white text-xl;
+  }
+  .typo {
+    @apply text-black w-36 text-left xs:text-lg;
+    /* font-size: 10px; */
+    flex-grow: 1;
+  }
+  .price {
+    @apply text-purple-700 text-right text-2xl;
+    flex-grow: 1;
+  }
+  .circle {
+    @apply border-2 border-gray-400 rounded-full w-9 h-9 mx-2 text-2xl;
+    /* font-size: 10px; */
+  }
+
+  /* customise this for radio button cards */
+  .size-radio {
+    @apply hidden checked:bg-purple-700;
+  }
+
+  .label {
+    @apply px-3 py-3 bg-purple-700 text-white border-2 border-black cursor-pointer;
+  }
+
+  #forty-five:checked ~ .forty-five,
+  #forty-four:checked ~ .forty-four,
+  #forty-three:checked ~ .forty-three,
+  #forty-two:checked ~ .forty-two,
+  #forty-one:checked ~ .forty-one,
+  #forty:checked ~ .forty,
+  #thirty-nine:checked ~ .thirty-nine,
+  #thirty-eight:checked ~ .thirty-eight,
+  #thirty-seven:checked ~ .thirty-seven,
+  #thirty-six:checked ~ .thirty-six {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid black;
+  }
+
+  .cartCard {
+    @apply w-64 rounded-sm bg-white flex;
+    border-width: 1px;
+    height: 70px;
+  }
+
+  /* Customize Card radio button styles */
+  .radioCardBtn {
+    @apply hidden checked:bg-purple-700;
+  }
+
+  #radioCardlabel {
+    @apply flex items-center justify-evenly text-gray-600 mx-1 rounded border-gray-500 border h-14 w-36 text-xs p-4;
+  }
+
+  #myLocation:checked ~ .myLocation,
+  #pickUp:checked ~ .pickUp {
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid black;
+  }
+}
