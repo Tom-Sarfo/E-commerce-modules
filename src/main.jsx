@@ -11,6 +11,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Cart from "./CartComponents/Cart.jsx";
+import ShippingOutlet from "./ShippingComponents/ShippingOutlet.jsx";
+import OrderSummary from "./OrderSummaryComponents/OrderSummary.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <Cart />
+    element: <Cart />,
+    children: [
+      {
+        path: "/cart",
+        element: <ShippingOutlet />
+      },
+      {
+        path: "/cart/summary",
+        element: <OrderSummary />
+      },
+
+    ]
   },
   
 ]);
