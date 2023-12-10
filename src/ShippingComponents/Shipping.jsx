@@ -5,9 +5,9 @@ import ShippingDetails from "./ShippingDetails";
 export default function Shipping() {
   return (
     <div className="">
-      <h1 className="text-sm py-4 px-7">Select your preffered shipping method</h1>
+      <h1 className="text-xl py-5 px-7">Select your preffered shipping method</h1>
       {/* use radio buttons */}
-      <form className="flex justify-around">
+      <form className="flex justify-around py-3">
         <input
           type="radio"
           name="shippingMethod"
@@ -18,7 +18,7 @@ export default function Shipping() {
         <label
           htmlFor="myLocation"
           id="radioCardlabel"
-          className="myLocation my"
+          className="myLocation"
         >
           <LocalShippingIcon /> <span>Ship to me</span>
         </label>

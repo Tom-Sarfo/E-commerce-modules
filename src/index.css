@@ -8,7 +8,7 @@
     /* @apply text-lg */
 }
   .btn {
-    @apply bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 text-xs uppercase rounded-lg w-full;
+    @apply bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 text-xl uppercase rounded-lg w-full;
   }
   .addToCart {
     @apply bg-white border-2 border-purple-700 hover:bg-purple-800 hover:text-white text-purple-700 py-1 px-4 text-xs uppercase rounded-sm;
@@ -59,9 +59,9 @@
   }
 
   .cartCard {
-    @apply w-full rounded-sm bg-white flex;
-    border-width: 1px;
-    height: 70px;
+    @apply w-full rounded-lg bg-white flex border-2;
+    /* border-width: 2px; */
+    height: 120px;
   }
 
   /* Customize Card radio button styles */
@@ -70,7 +70,7 @@
   }
 
   #radioCardlabel {
-    @apply flex items-center justify-evenly text-gray-500 mx-1 rounded border-gray-500 border h-14 w-36 text-xs p-4;
+    @apply flex items-center justify-evenly text-gray-500 mx-1 rounded border-gray-500 border h-16 w-44 text-xl p-4;
   }
 
   #myLocation:checked ~ .myLocation,

@@ -5,10 +5,10 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function CartCard() {
   return (
     <div className="cartCard">
-      <div className="flex-none w-20 py-5 px-7 text-gray-500 bg-gray-300">
+      <div className="flex-none w-32 py-11 px-12 text-gray-500 bg-gray-300">
         <ImageIcon />
       </div>
-      <div className="grow w-48  text-xs text-left px-4 py-1">
+      <div className="grow w-48  text-xl text-left px-4 py-2">
         <p className="font-bold text-gray-700">Afro-G</p>
         <div>
           <label for="sizes" className="text-red-500">
@@ -36,8 +36,8 @@ export default function CartCard() {
           <p className="font-bold text-purple-500">$100 x 1</p>
         </div>
       </div>
-      <div className="py-5">
-        <button className="flex-none w-6  border-2  h-6 rounded-full bg-red-300">
+      <div className="py-11">
+        <button className="flex-none w-7  border-2  h-7 rounded-full bg-red-300">
           <CloseIcon sx={{ fontSize: "12px", marginBottom: "3px" }} />
         </button>
       </div>
