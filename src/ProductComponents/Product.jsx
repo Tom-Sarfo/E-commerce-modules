@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import ProductShowcase from "../ProductShowcase";
 
@@ -90,13 +91,9 @@ function Product() {
           </div>
         </div>
         <div className={styles.callToActionContainer}>
-          <button
-            className="btn"
-            onClick={() => setCount((count) => count + 1)}
-            
-          >
-            Buy now {count}
-          </button>
+          <Link to="/cart" className="w-full">
+            <button className="btn">Buy now</button>
+          </Link>
         </div>
       </div>
     </div>

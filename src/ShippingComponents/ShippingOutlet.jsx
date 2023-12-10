@@ -1,6 +1,7 @@
 import React from "react";
 import Shipping from "../ShippingComponents/Shipping";
 import Divider from "@mui/material/Divider";
+import { Link } from "react-router-dom";
 
 export default function ShippingOutlet() {
   const cartSyles = {
@@ -18,7 +19,9 @@ export default function ShippingOutlet() {
       <div className="my-4">
         <Shipping />
       </div>
-      <button className="btn">Checkout</button>
+      <Link to="/cart/summary">
+        <button className="btn">Checkout</button>
+      </Link>
     </div>
   );
 }
