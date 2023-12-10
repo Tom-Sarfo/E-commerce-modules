@@ -4,8 +4,8 @@ import Cart from "./CartComponents/Cart";
 function App(){
   return(
     <div className="Entry">
-    {/* <Product /> */}
-    <Cart />
+    <Product />
+    {/* <Cart /> */}
     </div>
   )
 }
